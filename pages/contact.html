@@ -47,13 +47,44 @@
                     </h4>
                 </div>
             </div>
+           <a onclick="showForms()" href="#forms">
+               <h5 class="text-secondary mb-0">
+                Envie um email
+                </h5>
+            </a>
         </div>
     </section>
+    
+    <section id="forms" class="portfolio-block contact" style="display: none">
+    <div class="container">
+        <form>
+            <label class="text-right d-sm-flex justify-content-sm-end">
+                <input type="reset" value="Limpar" style="color: rgb(29,128,159);font-size: 13px; background: white; border: 0px;  outline: none;";>
+            </label>
+            <div class="form-group"><label for="email">Remetente</label><input type="email" class="form-control item" id="name" /></div>
+            <div class="form-group"><label for="email">Destinatário</label><input type="email" class="form-control item" id="subject" value="felipe.amorim@unifesp.br" readonly /></div>
+            <div class="form-group"><label for="subject">Assunto</label><input type="text" class="form-control item" id="email" /></div>
+            <div class="form-group"><label for="message">Mensagem</label><textarea class="form-control item" id="message"></textarea></div>
+            <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit" style="background-color: rgb(29,128,159);">Enviar</button></div>
+        </form>
+    </div>
+</section>
 
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="../assets/js/stylish-portfolio.js"></script>
+    
+    <script>
+        function showForms() {
+            var x = document.getElementById("forms");
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            }else{
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
