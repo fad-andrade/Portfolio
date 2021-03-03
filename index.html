@@ -52,28 +52,41 @@
                         </a></strong>
                     </h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-key" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Segurança Comp.</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-speedometer" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>PCD</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-exclamation" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Compiladores</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-organization" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Blockchain</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-envelope-open" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Redes</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-notebook" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Ciência e Tecnologia</strong></h4>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"></span>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" style="background-color: rgb(194, 191, 191)"><i class="icon-pencil" style="color: white"></i></span>
                     <h4 style="color: rgb(29,128,159);"><strong>Pesquisa Operacional</strong></h4>
                     <!-- <p class="mb-0 text-faded">Prof. Antônio</p> -->
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="exclusive" class="content-section text-white text-center" style="background-color: grey; display: none;">
+        <div class="container">
+            <div class="content-section-heading">
+                <a href="./pages/web/login.php">           
+                    <h3 class="text-secondary mb-0">
+                        FAÇA LOGIN E CONFIRA
+                    </h3>
+                </a>
+                <h2 class="mb-5">Conteúdo Exclusivo</h2>
             </div>
         </div>
     </section>
@@ -150,10 +163,13 @@
     <script>
         function showUCs() {
             var x = document.getElementById("ucs");
+            var y = document.getElementById("exclusive");
             if(x.style.display === "none"){
                 x.style.display = "block";
+                y.style.display = "block";
             }else{
                 x.style.display = "none";
+                y.style.display = "block";
             }
         }
         function showWeb() {
@@ -161,7 +177,7 @@
             if(x.style.display === "none"){
                 x.style.display = "block";
             }else{
-                x.style.display = "none";
+                x.style.display = "none";  
             }
         }
         function showGrafos() {
